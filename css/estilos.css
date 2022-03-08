@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+/*//////////////////////////////////////////////
+//GENERAL - Layout
+/////////////////////////////////////////////*/
+body{
+font-family: Georgia serif;
+font-size:14px;
+}
+
+#contenedor {
+background-color: #ffffff;
+height: 100%;
+width: 100%;
+}
+
+#cabecera{
+height:140px;
+color: #5858FA;
+background:#0B0B61;
+margin-bottom: 2px;
+}
+
+#logo{
+padding-top:30px;
+padding-left:60px;
+}
+
+#logo a:link{
+   color: #5858FA;
+}
+
+#logo a:visited{
+   color: #5858FA;
+}
+
+#logo a:hover{
+   color:white;
+}
+
+#menu{
+background-color: gray;
+width: 100%;
+height: 30px;
+}
+/*
+#derecho{
+float:right;
+width: 15%;
+color:#fff;
+height:480px;
+margin:5px;
+text-align: center;
+border: 3px dotted #brown;
+}
+*/
+
+#contenido {
+/*float:left;
+width: 100%; */
+height: 580px;
+margin: 2px;
+background-color:#E0ECF8;
+border: 3px dotted #brown;
+overflow: auto;
+}
+
+#pie {
+position: relative;
+top:440px;
+background-color:#333;
+height:40px;
+text-align:center;
+color:yellow;
+margin: 5px;
+}
+
+/*/////////////////////////////////////////////////////////////////////
+//Men? horizontal
+/////////////////////////////////////////////////////////////////////*/
+
+
+#menu ul{
+list-style:none;
+border-left:1px solid white;
+}
+
+#menu ul li{
+float:left;
+}
+
+#menu ul li a{
+display: block;
+padding: 5px 20px;
+text-decoration: none;
+font-size: 120%;
+color: #0B0B61;
+border-right: 1px solid white;
+border-left: 1px solid white;
+}
+
+#menu ul li a:hover{
+color: white;
+
+}
+
+/*****TABLAS****/
+
+small{
+   font-size:9px;
+}
+
+.error{
+   color: red;
+}
+
+table{
+   width:700px;
+   margin:auto;
+}
+table td{
+   border-bottom:1px solid #D3D3D3;
+   padding:5px 0px 5px;
+}
+
+table th{
+   background-color:#CDCDCD;
+   padding:5px 0px 5px;
+}
+
+/******CARGANDO********/
+
+#cargando{
+   width: 100%;
+   display:none;
+   background-color:green;
+   border: 1px;
+   text-align: center;
+}
+
+/******FORMULARIOS********/
+form span.label{
+   display:block;
+   font-weight:bold;
+}
+form label .label {
+    display:block;
+    font-weight:bold;
+}
+form label {
+    display:block;
+    font-size:12px;
+}
+form input:not([type="submit"] ):not([type="checkbox"] ):not([type="radio"] ), form textarea, form select {
+    border:1px solid #eeeeee;
+    margin-left:10px;
+    padding:5px;
+    /*width:300px;*/
+}
+form p.bool .label {
+    display:inline;
+    font-weight:normal;
+}
+form textarea { font-family: arial; }
+form .error input:not([type="submit"] ):not([type="checkbox"] ):not([type="radio"] ), form .error textarea, form .error select { border-color: black; }
+form span.error-message {
+    display:block;
+    color: red;
+}
+form span.radio {
+    display:block;
+    margin:5px 0;
+}
+form .radio label { font-weight:normal; }
+
+form{
+   border:2px solid #C0C0C0;
+   background-color:#F2F2F2;
+   width:95%;
+   margin:auto;
+   margin-bottom:10px;
+   color: black;
+   font-size: black;
+}
+
+form p{
+   margin:auto;
+   width:96%;
+   margin-top:5px;
+   margin-bottom:3px;
+}
+form input{
+   border:1px solid #CCCCCC;
+   padding:3px;
+}
+
+/*form .text{
+   width:400px;
+}*/
+
+/* ETIQUETAS DE ERROR Y OK A NIVEL DE ELEMENTO*/
+em.error {
+   display:block;
+   height:10px;
+   /*background:url("Imagenes/error.gif") no-repeat 0px 0px;*/
+   padding-left:15px;
+   font: 9px Verdana, Arial, Helvetica, sans-serif;
+   color: #ff5432;
+}
+em.success {
+   display:block;
+   height:10px;
+   /*background:url("Imagenes/ok.gif") no-repeat 0px 0px;*/
+   padding-left:15px;
+   font: 9px Verdana, Arial, Helvetica, sans-serif;
+   color: #336699;
+}
